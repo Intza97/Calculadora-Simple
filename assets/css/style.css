@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #eff0f4;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -80px;
+}
+
+.drop {
+  width: 500px;
+  height: 500px;
+  box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05),
+    25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 52% 48% 33% 67% / 38% 45% 55% 62%;
+}
+
+.drop:hover {
+  border-radius: 50%;
+}
+
+.drop::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 85px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.9;
+}
+
+.drop::after {
+  content: '';
+  position: absolute;
+  top: 90px;
+  left: 110px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.9;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  gap: 15px;
+}
+
+.calculator h2 {
+  color: #333;
+  font-size: 1.5em;
+  border: 2px solid  #E0E0E0 ;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  height: 50px;
+  display: flex;
+  border-radius: 25px;
+  background: #e6e6e6;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -2px -5px 10px rgba(255, 255, 255, 1),
+    15px 15px 10px rgba(0, 0, 0, 0.05),
+    15px 10px 15px rgba(0, 0, 0, 0.025);
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background: #e6e6e6;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -2px -5px 10px rgba(255, 255, 255, 1),
+    15px 15px 10px rgba(0, 0, 0, 0.05),
+    15px 10px 15px rgba(0, 0, 0, 0.025);
+  cursor: pointer;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.AC, .DEL, .IGUAL {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+}
+.AC{
+  background: #FF4D4D;
+}
+.AC:hover {
+  background:#FF3333;
+}
+.DEL{
+  background: #FFA726;
+}
+.DEL:hover {
+  background: #FF8C00;
+}
+.IGUAL{
+  width: 150px;
+  background:  #4CAF50;
+}
+.IGUAL:hover {
+  background: #43A047;
+}
+.X{
+  font-weight: 600;
+}
